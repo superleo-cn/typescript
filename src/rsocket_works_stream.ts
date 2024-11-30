@@ -4,6 +4,8 @@ import {exit} from "process";
 import WebSocket from "ws";
 import {encodeCompositeMetadata, encodeRoute, WellKnownMimeType} from "rsocket-composite-metadata";
 
+
+// 必须使用 ^1.0.0-alpha.3 版本
 const url = "wss://api-dev.actqa.com/ws";
 // const url = "ws://localhost:9999/ws";
 const token = 'Bearer NK2fefNWi7Aj4FjY_sUQyGWkjvhtNgtsrk00PQgOFk4zFoK_yu1vPurI86ur18zQtdwTVQB73iE9OIZXp_xkzawbjIJQI85aWl0rMyLsHgQ=';
