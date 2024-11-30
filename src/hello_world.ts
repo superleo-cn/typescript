@@ -162,6 +162,7 @@ export async function checkProgram(): Promise<void> {
 
     // Derive the address (public key) of a greeting account from the program so that it's easy to find later.
     const GREETING_SEED = 'hello';
+    // 让用户的公钥和合约程序建立联系，从而派生出一个新的公钥，专门用于该程序，如果 seed 不同，则创建新的账号，
     greetedPubkey = await PublicKey.createWithSeed(
         payer.publicKey,
         GREETING_SEED,
@@ -182,7 +183,9 @@ export async function checkProgram(): Promise<void> {
 
         const transaction = new Transaction().add(
             SystemProgram.createAccountWithSeed({
+                // 支付公钥
                 fromPubkey: payer.publicKey,
+                // 创建 newAccountPubkey 时，使用的公钥
                 basePubkey: payer.publicKey,
                 seed: GREETING_SEED,
                 newAccountPubkey: greetedPubkey,

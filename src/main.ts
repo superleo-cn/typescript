@@ -1,5 +1,9 @@
 /**
  * Hello world
+ * main account: 7yEjEiMaofpXmodYAJKqU1z2pzNKtSj7HRk1yL9bPxa1
+ * dummy account: CA9XJDNKv5UAJWPVPJNPPWD7B4QPHZWV2boiGwAm2X2W
+ * default account: EWoyZ3nK7uXPhetpbVhoexzynYTjDfYLnYTqq9GTqwaD
+ * contract account: GKR72VqvGEtkMzAxeDmLwTt27cdjWbQdDbd7a13uhJnE
  */
 
 import {
